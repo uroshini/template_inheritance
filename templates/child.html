@@ -1,0 +1,23 @@
+{% extends 'mdb5.html'%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+        <title>child</title>
+    {% endblock %}
+</head>
+<body>
+    {% block h1 %}
+    <center>
+        <h1 class="btn btn-success">child</h1>
+    </center>
+    {% endblock %}
+    {%block img %}
+        <img src="{% static 'images/four.jpg' %}" alt="">
+    {% endblock %}
+    
+</body>
+</html>
